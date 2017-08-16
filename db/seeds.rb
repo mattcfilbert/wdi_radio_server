@@ -5,3 +5,9 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+Song.delete_all
+
+20.times do |i|
+  Song.create(title: "#{i+1} out of 20 ways that I am dumb", artist: 'Perry', album: "Stupid Sounds Vol. #{i+1}")
+end
